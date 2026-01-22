@@ -1,6 +1,8 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Diagnostics;
 
 namespace HelloWorld;
 
@@ -14,12 +16,23 @@ public class Game1 : Game
         _graphics = new GraphicsDeviceManager(this);
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
+        
+        int x = 0;
+        float y = 0.0f;
+        double z = 0.0;
+    }
+
+    int getFunction(int x, int y)
+    {
+        return x + y;
     }
 
     protected override void Initialize()
     {
         // TODO: Add your initialization logic here
-
+        int x = 2;
+        Console.WriteLine(x);
+        Debug.WriteLine(x);
         base.Initialize();
     }
 

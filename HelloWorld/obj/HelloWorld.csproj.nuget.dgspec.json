@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sampoornaporia/MonoGame-graphics&viz/HelloWorld/HelloWorld.csproj": {}
+    "/Users/sampoornaporia/MonoGame-GraphicsViz/HelloWorld/HelloWorld.csproj": {}
   },
   "projects": {
-    "/Users/sampoornaporia/MonoGame-graphics&viz/HelloWorld/HelloWorld.csproj": {
+    "/Users/sampoornaporia/MonoGame-GraphicsViz/HelloWorld/HelloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sampoornaporia/MonoGame-graphics&viz/HelloWorld/HelloWorld.csproj",
+        "projectUniqueName": "/Users/sampoornaporia/MonoGame-GraphicsViz/HelloWorld/HelloWorld.csproj",
         "projectName": "HelloWorld",
-        "projectPath": "/Users/sampoornaporia/MonoGame-graphics&viz/HelloWorld/HelloWorld.csproj",
+        "projectPath": "/Users/sampoornaporia/MonoGame-GraphicsViz/HelloWorld/HelloWorld.csproj",
         "packagesPath": "/Users/sampoornaporia/.nuget/packages/",
-        "outputPath": "/Users/sampoornaporia/MonoGame-graphics&viz/HelloWorld/obj/",
+        "outputPath": "/Users/sampoornaporia/MonoGame-GraphicsViz/HelloWorld/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sampoornaporia/.nuget/NuGet/NuGet.Config"
