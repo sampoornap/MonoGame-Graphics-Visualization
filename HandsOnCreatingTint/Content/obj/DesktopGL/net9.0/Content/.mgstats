@@ -1,0 +1,2 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"/Users/sampoornaporia/MonoGame-GraphicsViz/HandsOnCreatingTint/Content/images/fireworks.jpg","/Users/sampoornaporia/MonoGame-GraphicsViz/HandsOnCreatingTint/Content/bin/DesktopGL/Content/images/fireworks.xnb","TextureProcessor","Texture2DContent",170104,6747957,0.451379
