@@ -44,6 +44,14 @@ public class Game1 : Game
         _graphics.PreferredBackBufferWidth = _img.Width;
         _graphics.PreferredBackBufferHeight = _img.Height;
         _graphics.ApplyChanges();
+        
+        float[][] myKernel = new float[3][];
+
+        myKernel[0] = [0.0f, -1.0f, 0.0f];
+        myKernel[1] = [-1.0f, 5.0f, -1.0f];
+        myKernel[2] = [0.0f, -1.0f, 0.0f];
+        
+        ApplyConvolution(myKernel, 3);
 
     }
 
@@ -84,13 +92,9 @@ public class Game1 : Game
 
         // TODO: Add your update logic here
         
-        float[][] myKernel = new float[3][];
+        
 
-        myKernel[0] = [0.0f, -1.0f, 0.0f];
-        myKernel[1] = [-1.0f, 5.0f, -1.0f];
-        myKernel[2] = [0.0f, -1.0f, 0.0f];
-
-        ApplyConvolution(myKernel, 3);
+        
         base.Update(gameTime);
     }
 
