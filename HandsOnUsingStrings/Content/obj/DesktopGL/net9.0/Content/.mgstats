@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"/Users/sampoornaporia/MonoGame-GraphicsViz/HandsOnUsingStrings/Content/text/textoutput.txt","/Users/sampoornaporia/MonoGame-GraphicsViz/HandsOnUsingStrings/Content/bin/DesktopGL/Content/text/textoutput.txt","CopyItem","File",0,0,0.000181
+"/Users/sampoornaporia/MonoGame-GraphicsViz/HandsOnUsingStrings/Content/text/textsample.txt","/Users/sampoornaporia/MonoGame-GraphicsViz/HandsOnUsingStrings/Content/bin/DesktopGL/Content/text/textsample.txt","CopyItem","File",24,24,0.000932
