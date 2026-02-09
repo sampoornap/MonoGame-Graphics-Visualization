@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>/Users/sampoornaporia/MonoGame-GraphicsViz/Typography/Content/Fonts/NewFont.spritefont</SourceFile>
+  <SourceTime>2026-02-08T22:23:33.2134057-06:00</SourceTime>
+  <DestFile>/Users/sampoornaporia/MonoGame-GraphicsViz/Typography/Content/bin/DesktopGL/Content/Fonts/NewFont.xnb</DestFile>
+  <DestTime>2026-02-08T22:28:40.6256061-06:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2025-10-20T09:25:32-05:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2025-10-20T09:25:32-05:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
