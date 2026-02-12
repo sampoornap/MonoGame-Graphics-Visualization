@@ -11,6 +11,7 @@ public class Game1 : Game
     private Spot _spot1;
     private Spot _spot2;
     private Texture2D _spotTexture;
+    private TwoSpot _doubleSpot;
 
     public Game1()
     {
@@ -42,6 +43,8 @@ public class Game1 : Game
         
         _spot1 = new Spot(_spotTexture, new Vector2(50, 100), new Vector2(120, 0));
         _spot2 = new Spot(_spotTexture, new Vector2(400, 300), new Vector2(-60, 80));
+        
+        _doubleSpot = new TwoSpot(_spotTexture, new Vector2(50, 100), new Vector2(120, 0));
         // TODO: use this.Content to load your game content here
     }
 
@@ -55,6 +58,7 @@ public class Game1 : Game
         _spot1.Move(gameTime);
         _spot2.Move(gameTime);
 
+        _doubleSpot.Move(gameTime);
         base.Update(gameTime);
     }
 
@@ -68,6 +72,8 @@ public class Game1 : Game
         
         _spot1.Display(_spriteBatch);
         _spot2.Display(_spriteBatch);
+        _doubleSpot.Display(_spriteBatch);
+
         _spriteBatch.End();
 
         base.Draw(gameTime);
