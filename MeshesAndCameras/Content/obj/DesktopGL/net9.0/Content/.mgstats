@@ -1,0 +1,2 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"/Users/sampoornaporia/MonoGame-GraphicsViz/MeshesAndCameras/Content/teapot.obj","/Users/sampoornaporia/MonoGame-GraphicsViz/MeshesAndCameras/Content/bin/DesktopGL/Content/teapot.xnb","ModelProcessor","ModelContent",152659,46443,0.691802
