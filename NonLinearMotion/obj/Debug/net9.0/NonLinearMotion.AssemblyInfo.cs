@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NonLinearMotion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57d34a230e3c305a36b2af43ad15ad136a4e9175")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73116eb612bf1b9bcaedeec113525b2820994c20")]
 [assembly: System.Reflection.AssemblyProductAttribute("NonLinearMotion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NonLinearMotion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

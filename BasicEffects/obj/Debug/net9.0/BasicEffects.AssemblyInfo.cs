@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BasicEffects")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21d840b47c45499fa044cf7a829ded5427ba33dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73116eb612bf1b9bcaedeec113525b2820994c20")]
 [assembly: System.Reflection.AssemblyProductAttribute("BasicEffects")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BasicEffects")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

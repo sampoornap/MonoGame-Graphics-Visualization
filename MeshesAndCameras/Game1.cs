@@ -1,9 +1,29 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
 namespace MeshesAndCameras;
-
+/*
+ * intensity and direction od light sources change what surfaces are affected
+ * types of basieffects lights - directional, ambient, emissive
+ * max intensity (255, 255, 255)
+ * 3 directional lights per basiceffects
+ * effect.DirectionalLight0.Enabled = true;
+ * effect.DirectionalLight0.DiffuseColor = new Vector3(...);
+ * effect.DirectionalLight0.Direction = new Vector3(...);
+ *
+ *
+ * ambient - approx many light bounces within a scene
+ * one ambinet lighting
+ *
+ * effect.AmbientLightColor = new Vector3(...);
+ *
+ * emmisive - like glow stick
+ * one emmisive
+ * effect.EmmisiveColor
+ * specularity - highlights
+ */
 public class Game1 : Game
 {
     private GraphicsDeviceManager _graphics;
@@ -15,6 +35,8 @@ public class Game1 : Game
     private Matrix view;
     private Matrix WorldRotation;
     private float rotationY;
+    
+    private float lightTime = 0f;
     
     private MouseState _prevMouse;
 
@@ -65,6 +87,8 @@ public class Game1 : Game
         WorldRotation = Matrix.CreateRotationY(rotationY);
         
         MouseState ms = Mouse.GetState();
+        
+        lightTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
 
 // Only rotate while left mouse is held
         if (ms.LeftButton == ButtonState.Pressed && _prevMouse.LeftButton == ButtonState.Pressed)
@@ -111,12 +135,14 @@ public class Game1 : Game
         GraphicsDevice.Clear(Color.CornflowerBlue);
 
         // TODO: Add your drawing code here
-        DrawMesh(_teapot);
+        DrawMesh(_teapot, new Vector3(0, 0, 0));
+        DrawMesh(_teapot, new Vector3(400, 0, 0));
+        
 
         base.Draw(gameTime);
     }
     
-    private void DrawMesh(Model m)
+    private void DrawMesh(Model m, Vector3 position)
     {
         if (m == null) return;
 
@@ -127,18 +153,47 @@ public class Game1 : Game
         {
             foreach (BasicEffect effect in mesh.Effects)
             {
+                effect.LightingEnabled = true;
+
+                if (effect.LightingEnabled)
+                {
+                    effect.DirectionalLight0.Enabled = true;
+                    effect.DirectionalLight0.DiffuseColor = new Vector3(1f, 0f, 0f);
+                    effect.DirectionalLight0.SpecularColor = new Vector3(0f, 1f, 0f);
+
+                    effect.DirectionalLight0.Direction = new Vector3(
+                        (float)Math.Cos(lightTime),
+                        -1f,
+                        (float)Math.Sin(lightTime));
+                    
+                    effect.DirectionalLight1.Enabled = true;
+                    effect.DirectionalLight1.DiffuseColor = new Vector3(0f, 0f, 1f);
+                    effect.DirectionalLight1.SpecularColor = new Vector3(1f, 1f, 1f);
+
+                    effect.DirectionalLight0.Direction = new Vector3(1f, -0.5f, -1f);
+                    
+                    float halfTime = lightTime * 0.5f;
+
+                    effect.EmissiveColor = new Vector3(
+                        (float)Math.Abs(Math.Sin(halfTime)), 0.5f, (float)Math.Abs(Math.Sin(halfTime)));
+
+
+
+
+                }
+            
                 effect.View = view;
                 effect.Projection = projection;
 
-                effect.EnableDefaultLighting();
+                // effect.EnableDefaultLighting();
                 effect.PreferPerPixelLighting = true;
-                effect.DiffuseColor = Vector3.One;
-                effect.AmbientLightColor = new Vector3(0.5f);
+                // effect.DiffuseColor = Vector3.One;
+                // effect.AmbientLightColor = new Vector3(0.5f);
 
                 var world =
                     Matrix.CreateScale(200f) *
                     WorldRotation *
-                    Matrix.CreateTranslation(0, 0, 0);
+                    Matrix.CreateTranslation(position);
 
                 effect.World = world * transforms[mesh.ParentBone.Index];
             }
