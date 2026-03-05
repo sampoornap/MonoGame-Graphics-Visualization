@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MeshesAndCameras")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73116eb612bf1b9bcaedeec113525b2820994c20")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad1e42f3ad3f437a9ee3fb8ad54bb552c30763ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("MeshesAndCameras")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MeshesAndCameras")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

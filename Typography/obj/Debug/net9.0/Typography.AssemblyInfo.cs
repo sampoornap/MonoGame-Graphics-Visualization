@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Typography")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7a80832ef662c1f776565e3c77dd8926710824a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad1e42f3ad3f437a9ee3fb8ad54bb552c30763ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("Typography")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Typography")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
