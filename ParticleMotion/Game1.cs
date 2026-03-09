@@ -63,8 +63,7 @@ public class Game1 : Game
         for (int i = 0; i < data.Length; i++)
         {
             data[i] = Color.White;
-        }
-        
+        } 
         particleTexture.SetData(data);
     }
 
@@ -99,6 +98,7 @@ public class Game1 : Game
                 particleTexture,
                 p.position,
                 Color.White
+                
             );
         }
         
